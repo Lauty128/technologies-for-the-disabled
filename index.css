@@ -1,6 +1,9 @@
 /*------------------- RESET ---------------------*/
 
-*{ box-sizing: border-box }
+*{ 
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 body{
     margin: 0;
@@ -35,12 +38,11 @@ body{
 
 .localSection{ padding: 0 1.5em }
 
-
 .imagesContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 12em;
-    gap: .5em;
+    gap: 1em;
     padding: 0 1em;
 }
 
@@ -50,22 +52,23 @@ body{
     object-fit: cover;
     box-shadow: 0 1px 5px rgba(0,0,0,0.3);
     transition: transform .2s linear;
+    margin-top: 1.4em;
 }
-.imageMain:hover{ transform: scale(.98); }
+.imageMain:hover{ transform: scale(1.03) }
 
 /*---------------------- ASIDE ----------------------------*/
 
-.newsContainer{ width: fit-content; margin: auto }
+.noticiesContainer{ width: fit-content; margin: auto }
 
 .aside{
     padding-left: 1em;
     border-left: .1em solid rgb(51, 51, 51);
 }
 
-.new{ display: block; width: 20em; height: 12em; margin-bottom: 1em; position: relative; box-shadow: 0 1px 5px rgba(0,0,0,0.6); overflow: hidden }
-.newImage{ object-fit: cover; width: 100%; height: 100%; pointer-events: none }
+.news{ display: block; width: 20em; height: 12em; margin-bottom: 1em; position: relative; box-shadow: 0 1px 5px rgba(0,0,0,0.6); overflow: hidden }
+.newsImage{ object-fit: cover; width: 100%; height: 100%; pointer-events: none }
 
-.spanNew{
+.spanNews{
     pointer-events: none;
     position: absolute;
     bottom: .5em;
@@ -82,31 +85,27 @@ body{
     opacity: 0;
     transition: opacity .3s linear;
 }
-.new:hover .spanNew{ opacity: 1; }
+.news:hover .spanNews{ opacity: 1; }
 
 
-/*------------------------- ABOUT SECTION ------------------------*/
+/*------------------------- PROJECT SECTION ------------------------*/
 
-.aboutSection{ width: 70%; margin-top: 5em; position: relative }
-
-.aboutSection::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.projectSection{ width: 60%; margin: 8em 0 4em 0 }
+.projectHeader{ width: 100% }
+.projectImg{
     width: 100%;
-    height: 100%;
+    height: 25em;
+    object-fit: cover;
+    object-position: top;
 }
 
-.aboutImg{
-    float: left;
-    margin-right: 1em;
-    width: 14em;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.6);
-}
+.a-project{ text-decoration: none; color: #000 }
+.h3-project{ margin: 0; font-size: 2em; } .h3-project:hover{ text-decoration: underline }
+.projectSpan{ margin-right: .2em; color: rgb(59, 59, 59); }
+.iconProject{ color: rgb(59, 59, 59); }
+.iconProject:hover{ color: #000 }
 
-
-.pAbout{ text-align: left }
+.pInframe{ text-align: center }
 
 /*------------------------- CONCLUSION ------------------------*/
 
