@@ -1,0 +1,121 @@
+/*------------------- RESET ---------------------*/
+
+*{ box-sizing: border-box }
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(219, 218, 218);
+}
+
+.h1{ margin: 2em 0 8em 0; text-align: center }
+.h2{ text-align: center; text-decoration: underline; margin-bottom: 1.4em; }
+
+.p{ font-size: 1.3em; text-align: justify; }
+
+/*------------------- MAIN ---------------------*/
+
+.main{
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerImage{ width:45em; height:25em; margin-top: -12em; object-fit: cover }
+
+
+.mainContentContainer{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.localSection{ padding: 0 1.5em }
+
+
+.imagesContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 12em;
+    gap: .5em;
+    padding: 0 1em;
+}
+
+.imageMain{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    transition: transform .2s linear;
+}
+.imageMain:hover{ transform: scale(.98); }
+
+/*---------------------- ASIDE ----------------------------*/
+
+.newsContainer{ width: fit-content; margin: auto }
+
+.aside{
+    padding-left: 1em;
+    border-left: .1em solid rgb(51, 51, 51);
+}
+
+.new{ display: block; width: 20em; height: 12em; margin-bottom: 1em; position: relative; box-shadow: 0 1px 5px rgba(0,0,0,0.6); overflow: hidden }
+.newImage{ object-fit: cover; width: 100%; height: 100%; pointer-events: none }
+
+.spanNew{
+    pointer-events: none;
+    position: absolute;
+    bottom: .5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: .3em;
+    font-size: 1.4em;
+    color: #fff;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.9);
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+.new:hover .spanNew{ opacity: 1; }
+
+
+/*------------------------- ABOUT SECTION ------------------------*/
+
+.aboutSection{ width: 70%; margin-top: 5em; position: relative }
+
+.aboutSection::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutImg{
+    float: left;
+    margin-right: 1em;
+    width: 14em;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.6);
+}
+
+
+.pAbout{ text-align: left }
+
+/*------------------------- CONCLUSION ------------------------*/
+
+.conclusionSection{ width: 70%; margin: 3em 0 ; }
+
+
+.footer{ display: flex; justify-content: space-between; align-items: center; padding: .5em 2em; }
+.textFooter{ width: 30em }
+
+.a-icon{ color: #000; margin-right: 1em; text-decoration: none; }
+.icon{ font-size: 1.5em; }
+.a-icon:hover{ color: rgb(53, 53, 53); }
