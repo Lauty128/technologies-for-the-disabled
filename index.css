@@ -14,10 +14,11 @@ body{
 }
 
 .h1{ margin: 2em 0 8em 0; text-align: center }
-.h2{ text-align: center; text-decoration: underline; margin-bottom: 1.4em; }
+.h2{ text-align: center; text-decoration: underline; margin-bottom: 1.4em }
 
-.p{ font-size: 1.3em; text-align: justify; line-height: 30px; }
+.p{ font-size: 1.3em; text-align: justify; line-height: 30px }
 
+/*------------------- BOX ---------------------*/
 .box{
     position: fixed;
     top: 50%;
@@ -33,17 +34,19 @@ body{
 .box-p{ text-align: justify; }
 #close-box{ cursor: pointer }
 
-.box--active{ transform: translate(-50%,-50%); }
+.box--active{ transform: translate(-50%,-50%) }
+
+/*------------------- GROUP ---------------------*/
+.group{
+    position: absolute;
+    top: -60px;
+    left: 15px;
+}
+.group span{ display: block; font-weight: 500; }
 
 /*------------------------- CONICET CONTAINER ------------------------*/
-.ConicetContainer{
-    width: 80%;
-    margin: auto;
-}
-.ConicetButtons{
-    display: flex;
-    justify-content: space-around;
-}
+.ConicetContainer{ width: 80%; margin: auto }
+.ConicetButtons{ display: flex; justify-content: space-around }
 .ConicetButton{
     background-color: rgb(228, 228, 228);
     border: none;
@@ -54,7 +57,7 @@ body{
     cursor: pointer;
     transition: box-shadow .1s linear;
 }
-.ConicetButton:hover{ box-shadow: 0 0 5px rgba(0,0,0,0.6); }
+.ConicetButton:hover{ box-shadow: 0 0 5px rgba(0,0,0,0.6) }
 
 
 /*------------------- MAIN ---------------------*/
@@ -101,10 +104,7 @@ body{
 
 .noticiesContainer{ width: fit-content; margin: auto }
 
-.aside{
-    padding-left: 1em;
-    border-left: .1em solid rgb(51, 51, 51);
-}
+.aside{ padding-left: 1em; border-left: .1em solid rgb(51, 51, 51) }
 
 .news{ display: block; width: 20em; height: 12em; margin-bottom: 1em; position: relative; box-shadow: 0 1px 5px rgba(0,0,0,0.6); overflow: hidden }
 .newsImage{ object-fit: cover; width: 100%; height: 100%; pointer-events: none }
@@ -126,7 +126,7 @@ body{
     opacity: 0;
     transition: opacity .3s linear;
 }
-.news:hover .spanNews{ opacity: 1; }
+.news:hover .spanNews{ opacity: 1 }
 
 /*------------------------- PROJECT INFO ------------------------*/
 .infoProject{ width: 80%; margin-top: 3em }
@@ -146,20 +146,21 @@ body{
 
 .a-project{ text-decoration: none; color: #000 }
 .h3-project{ margin: 0; font-size: 2em; } .h3-project:hover{ text-decoration: underline }
-.projectSpan{ margin-right: .2em; color: rgb(59, 59, 59); }
-.iconProject{ color: rgb(59, 59, 59); }
+.projectSpan{ margin-right: .2em; color: rgb(59, 59, 59) }
+.iconProject{ color: rgb(59, 59, 59) }
 .iconProject:hover{ color: #000 }
 
 .pInframe{ text-align: center }
 
 /*------------------------- CONCLUSION ------------------------*/
 
-.conclusionSection{ width: 70%; margin: 3em 0 ; }
+.conclusionSection{ width: 70%; margin: 3em 0 }
 
 
-.footer{ display: flex; justify-content: space-between; align-items: center; padding: 1.2em 2em;}
+.footer{ display: flex; justify-content: space-between; align-items: center; padding: 1.2em 2em }
 .textFooter{ width: 30em }
+.textFooter a{ text-decoration: none; }
 
-.a-icon{ color: #000; margin-right: 1em; text-decoration: none; }
-.icon{ font-size: 1.5em; }
-.a-icon:hover{ color: rgb(53, 53, 53); }
+.a-icon{ color: #000; margin-right: 1em; text-decoration: none }
+.icon{ font-size: 1.5em }
+.a-icon:hover{ color: rgb(53, 53, 53) }
