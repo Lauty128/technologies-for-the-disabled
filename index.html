@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/logo.png" type="image/png">
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/934826e832.js" crossorigin="anonymous"></script>
     <title>CONICET</title>
 </head>
@@ -55,12 +56,13 @@
             <ul>
                 <li>Este trabajo fue llevado a cabo por  Lucas Guillermo Gilberto (el joven cordobés) con la ayuda de otros que integraron el equipo, estos son Fernando Bermejo, Valentín Lunati y Claudia Arias. El estudio se llevó a cabo en el laboratorio del CINTRA, además de la ayuda del CONICET con su financiamiento en la investigación.</li>
                 <li>El principio del equipo fue el especial interés en el diseño de tecnologías accesibles que se adapten a las diferentes necesidades de las personas; como en el caso de adaptaciones auditivas y táctiles de videojuegos electrónicos para personas que tienen alguna discapacidad sensorial (por ejemplo: Tampokme, Super Mario Bros Audio Edition, AudioQuake, Super Egg Hunt y Battle Chess). A pesar de ello, el acceso a estas tecnologías es limitado debido a que existen escasos desarrollos de estas características en el mercado de juegos computarizados</li>
+                <li>Los avances logrados en este trabajo apuntan a generar aportes teóricos y técnicos para el desarrollo de plataformas virtuales de entrenamiento de habilidades espaciales no visuales, las cuales son cruciales para la O&M eficiente de la persona ciega. En este estudio, se buscó aumentar las propiedades inmersivas e interactivas de un audiojuego modificando sus propiedades sonoras, su historia y el comando de juego.</li>
             </ul>
         </section>
 
         <section class="projectSection">
             <div class="projectHeader">
-                <img src="assets/6PGFYAOKZVHIHNW3ROLRU65YEU.jpg" class="projectImg">
+                <img src="assets/6PGFYAOKZVHIHNW3ROLRU65YEU.jpg" class="projectImg" data-aos="zoom-in">
                 <a href="https://www.conicet.gov.ar/new_scp/detalle.php?keywords=Discapacidad&id=53991&articulos=yes&detalles=yes&art_id=6404794" class="a-project"><h3 class="h3-project">Audiojuego con sonidos envolventes</h3></a>
                 <div>
                     <span class="projectSpan">- Lucas Guillermo Gilberto</span>
@@ -93,9 +95,9 @@
                     </p>
 
                 <div class="imagesContainer">
-                    <img src="assets/58.jpg" class="imageMain">
-                    <img src="assets/accesibility-5-1024x682.jpg" class="imageMain">
-                    <img src="assets/unknown.png" class="imageMain">
+                    <img src="assets/58.jpg" class="imageMain" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="assets/accesibility-5-1024x682.jpg" class="imageMain" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="assets/unknown.png" class="imageMain" data-aos="zoom-in" data-aos-delay="100">
                 </div>
 
             </section>
@@ -103,15 +105,15 @@
             <aside class="aside">
                 <h2 class="h2">NOTICIAS</h2>
                 <div class="noticiesContainer">
-                    <a href="https://www.olavarria.gov.ar/inclusion-digital-mas-de-600-olavarrienses-recibieron-sus-tablets/" target="_blank" class="news">
+                    <a href="https://www.olavarria.gov.ar/inclusion-digital-mas-de-600-olavarrienses-recibieron-sus-tablets/" target="_blank" class="news" data-aos="fade-left">
                         <img src="assets/noticias/noticia1.jpg" class="newsImage">
                         <span class="spanNews">Inclusión digital: más de 600 olavarrienses recibieron sus tablets</span>
                     </a>
-                    <a href="https://www.sjdgranada.es/node/2794" target="_blank" class="news">
+                    <a href="https://www.sjdgranada.es/node/2794" target="_blank" class="news" data-aos="fade-left">
                         <img src="assets/noticias/noticia2.jpg" class="newsImage">
                         <span class="spanNews">Las nuevas tecnologías, motor de aprendizaje para personas con discapacidad</span>
                     </a>
-                    <a href="https://www.capacitacioninclusiva.com/herramientas-tecnolgicas-para-personas-con-discapacidad-visual" target="_blank" class="news">
+                    <a href="https://www.capacitacioninclusiva.com/herramientas-tecnolgicas-para-personas-con-discapacidad-visual" target="_blank" class="news" data-aos="fade-left">
                         <img src="assets/noticias/noticia3.jpg" class="newsImage">
                         <span class="spanNews">Herramientas tecnológicas para personas con discapacidad visual</span>
                     </a>
@@ -119,7 +121,7 @@
             </aside>
         </div>
 
-        <section class="conclusionSection">
+        <section class="conclusionSection" data-aos="fade-up" data-aos-delay="100">
             <h2 class="h2">CONCLUSION</h2>
             <p class="p">Luego  de investigar  y leer artículos, más el apoyo de los videos sobre la inclusión de las mujeres en el ámbito de la tecnología, pudimos llegar a la conclusión de que esas diferencias sobre qué debe hacer, seguir o estudiar cada uno, no se deben buscar  soluciones por el lado de que “la mujer o el hombre no puede seguir cierta carrera” como de este tipo, sino ver qué es lo que quieren los jóvenes. Ya en la actualidad este punto de vista se está borrando de a poco. Creemos que lo mejor que podemos hacer es tener una mirada más positiva, proactiva y constructiva al respecto. <br>
             Y por el lado de la inclusión de la gente con algún tipo de capacidad ya sea a causa de un accidente o de nacimiento, se pudo pensar y razonar, la tecnología ayuda muchísimo a la hora de facilitar acciones o movimientos de la gente con estos problemas de salud en su vida cotidiana. Y tenemos que tener en cuenta siempre esta frase “La inclusión se centra en la persona y no en su discapacidad”.
@@ -152,6 +154,11 @@
     </footer>
 
     <script src="app.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
