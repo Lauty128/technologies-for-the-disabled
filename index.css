@@ -33,6 +33,8 @@ body{
 }
 .box-p{ text-align: justify; }
 #close-box{ cursor: pointer }
+.pImage{ text-align: center; }
+.box__img{ width: 20em; margin: auto; }
 
 .box--active{ transform: translate(-50%,-50%) }
 
@@ -151,6 +153,8 @@ body{
 .iconProject:hover{ color: #000 }
 
 .pInframe{ text-align: center }
+.acontecimientosP{ width: 100%; text-align: center; margin-top: 2em; }
+#acontecimientos{ margin: auto }
 
 /*------------------------- CONCLUSION ------------------------*/
 

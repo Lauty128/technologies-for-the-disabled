@@ -22,6 +22,19 @@ const data = {
         Administrar las Carreras del Investigador Científico y del Personal de Apoyo a la Investigación y al Desarrollo.
         <br><br>
         Brindar asesoramiento a entidades públicas y privadas en el ámbito de su competencia.`
+    },
+    acontecimientos:{
+        title:"ACONTECIMIENTOS",
+        info:`
+            <p class="pImage">
+                <img src="assets/info.PNG" class="box__img">
+            </p>
+            <p>
+                Los participantes resolvían en primer lugar los ensayos en el entorno sonoro natural y luego en el entorno social; en cada caso, el orden de los recorridos era contrabalanceado entre los participantes. La prueba se llevó a cabo en una sola sesión que duraba aproximadamente 40 minutos. Todos los procedimientos cumplieron los principios éticos para la investigación con humanos estipulados en el CINTRA, UTN-FRC, Unidad Asociada de CONICET, Córdoba, Argentina y por la Declaración de Helsinki revisada en el año 2008.
+                Los parámetros del rendimiento del participante fueron cantidad de errores en las acciones del juego, duración de los ensayos y aciertos en el reconocimiento del mapa. Al finalizar la prueba, se realizó una entrevista semiestructurada para recabar datos sobre la experiencia de los participantes en el juego.  
+            </p>
+        `
+
     }
 }
 
@@ -39,4 +52,8 @@ document.querySelector(".ConicetButtons").addEventListener("click", e=>{
 
 document.getElementById("close-box").addEventListener("click", ()=>{
     document.querySelector(".box").classList.remove("box--active")
+})
+
+document.getElementById("acontecimientos").addEventListener("click", e=>{
+    showBox(data[e.target.getAttribute("id")].title, data[e.target.getAttribute("id")].info)
 })
